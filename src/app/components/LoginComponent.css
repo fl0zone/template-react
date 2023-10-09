@@ -1,0 +1,55 @@
+.login-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: black; /* Set text color to black */
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+.black-text {
+  color: black;
+}
+.card-custom {
+  min-width: 400px;
+  min-height: 400px;
+  /* Add other styles as needed */
+}
+.card-custom:hover {
+  box-shadow: none;
+  transition: none; /* Disable any transition on hover */
+  transform: none; /* Disable any transform on hover */
+  /* Add other styles as needed */
+}
+

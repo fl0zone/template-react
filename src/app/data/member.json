@@ -1,0 +1,39 @@
+{
+  "teamName": "Inv@der$",
+  "description": "Inv@der$ is a dynamic and diverse team of five college students with a shared passion for making a difference. We have come together to tackle challenges and create meaningful solutions in various domains. Each member brings a unique set of skills and expertise to the table, making us a well-rounded and formidable team.",
+  "members": [
+    {
+      "name": "Arun K Nair",
+      "role": "Frontend and UI Designer",
+      "description": "Creative visionary, excels in frontend and UI design, ensures stunning functionality and aesthetics.",
+      "image": "/planets/ak.jpeg"
+    },
+    {
+      "name": "Arun Krishnadas",
+      "role": "Team Coordinator and Documentation",
+      "description": " Coordinates, organizes, documents, and keeps the team on track.",
+      "image": "/planets/dasan.jpeg"
+    },
+    {
+      "name": "Abhijith Suresh",
+      "role": "Coder and Design Consultant",
+      "description": "Abhijith: Coding whiz, design guru, bridges code and design seamlessly.",
+      "image": "/planets/me.jpeg"
+    },
+    {
+      "name": "Andrea Sunny",
+      "role": "Documentation and Presenter",
+      "description": "Andrea excels in communication, creates comprehensive documentation, and adeptly presents.",
+      "image": "/planets/sunny.jpeg"
+    },
+    {
+      "name":"Binduja Babu",
+      "role":"PRO",
+      "description":"Binduja collaborates with Andrea for meticulous, engaging documentation & social media management.",
+      "image": "/planets/binduja.jpeg"
+    }
+    
+    
+  ],
+  "challenge": "In the distant future, space tourism will likely be routine for Earth dwellers, but space travelers will need help choosing a destination and determining an itinerary. Imagine you are a travel agent at a future space tourism office. Your challenge is to create a tool that will not only develop customized itineraries for future travelers who want to visit the main bodies in our solar system—perhaps Mars, Jupiter, or Saturn—but also educate present-day users about the many different objects in our solar system."
+}

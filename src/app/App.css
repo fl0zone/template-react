@@ -1,0 +1,106 @@
+body {
+  background-image: url('https://img.freepik.com/free-photo/galaxy-night-view_23-2148895312.jpg?w=900&t=st=1696740969~exp=1696741569~hmac=216abdeb896daea8060f19d4621e3799cf6153405b4dee72c91678724f4ec25f');
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgba(0,0,0,0.0);
+}
+
+.header {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.planet-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.navigation button {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.2); /* Reduced opacity for glow spread */
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 0.5em .25em var(--glow-color), /* Reduced glow effect */
+        0 0 2em 0.5em var(--glow-spread-color), /* Reduced spread effect */
+        inset 0 0 .5em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+/* Hover effect */
+.navigation button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 0.5em .25em var(--glow-color),
+        0 0 2em 1em var(--glow-spread-color), /* Increased spread effect on hover */
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+/* Active effect */
+.navigation button:active {
+  box-shadow: 0 0 0.3em .25em var(--glow-color), /* Reduced glow effect on active */
+        0 0 1.5em 1em var(--glow-spread-color), /* Reduced spread effect on active */
+        inset 0 0 .3em .25em var(--glow-color);
+}
+
+/* Glow effect after button */
+.navigation button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(1.5em); /* Reduced blur effect after button */
+  opacity: .5; /* Reduced opacity after button */
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+.card {
+  border-radius: 15px; /* You can adjust the value according to your preference */
+}
+
+
+
+
+
