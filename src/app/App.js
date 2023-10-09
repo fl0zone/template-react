@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'; // Import useState and useEffect
 import PlanetInfo from './PlanetInfo';
-import Itinerary from './Itinerary';
-import planetsData from './data/planets.json';
 import Carousel from './carousel';
 import './App.css';
 import Navbar from './Navbar';
@@ -11,7 +9,6 @@ import About from './About';
 import RegistrationComponent from './components/RegistrationComponent';
 
 import LoginComponent from "./components/LoginComponent";
-import ProtectedPage from "./components/ProtectedPage";
 import { auth } from './config/firebase.js';
 import Explore from './Explore';
 
