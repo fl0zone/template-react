@@ -1,0 +1,103 @@
+.planet-info-container {
+  padding: 20px;
+  /* background-color: #121212; */
+  color: #ffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.planet-info-container:hover {
+  transform: scale(1.02);
+}
+
+.planet-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.planet-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.planet-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.planet-distance {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.planet-tips {
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.planet-tips h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.travel-methods,
+.points-of-interest {
+  margin-bottom: 20px;
+}
+
+.travel-methods h2,
+.points-of-interest h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.travel-methods ul,
+.points-of-interest ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.travel-methods li,
+.points-of-interest li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+
+.poi-item {
+  display: flex;
+  align-items: center;
+}
+
+.poi-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.points-of-interest h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.white-text h1,
+.white-text p,
+.white-text span,
+.white-text h2,
+.white-text h3 {
+  color: white;
+}

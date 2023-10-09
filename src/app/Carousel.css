@@ -1,0 +1,90 @@
+.carousel-control-prev, .carousel-control-next {
+    opacity: 0.7; /* Adjust the opacity as needed */
+    background-color: transparent; /* Remove the blue background color */
+  }
+  
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: transparent; /* Remove the blue background color on hover */
+  }
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-control {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .carousel-container:hover .carousel-control {
+    opacity: 1; /* Show the controls when hovered */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+  .carousel-button-container {
+    position: absolute;
+    bottom: 150px; /* Adjust the bottom margin as needed */
+    left: 51%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .carousel-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .btn-donate:hover {
+    background-position: right top;
+  }
+  
+  .btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+      transition: linear;
+    }
+  }
+  
+  

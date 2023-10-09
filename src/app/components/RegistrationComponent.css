@@ -1,0 +1,17 @@
+ /* Style for the text outside the input fields */
+  .card-body h2,
+  .card-body button,
+  .card-body p {
+    color: white; /* Set the text color to white */
+  }
+  
+  /* Style for the text inside the input fields */
+  .card-body input {
+    color: black; /* Set the text color to black */
+  }
+  .card:hover {
+    box-shadow: none;
+    transition: none;
+    transform: none;;
+  }
+  
