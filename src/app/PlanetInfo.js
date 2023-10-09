@@ -3,26 +3,25 @@ import './PlanetInfo.css';
 import planetsData from './data/planets.json';
 import Itinerary from './Itinerary';  // Import the Itinerary component
 import { useParams } from 'react-router-dom';
+import Image from 'next/image'; // Import the Image component from next/image
 
 function PlanetInfo() {
   const { planetName } = useParams();
   const planet = planetsData[planetName];
 
   if (!planet) return <p>Planet not found!</p>;
-  
 
   return (
     <div className="planet-info-container white-text">
       <h1 className="planet-title">{planet.title}</h1>
       <div className="planet-image-container">
-        <iframe 
+        {/* Replace <img> with <Image> */}
+        <Image
           src={planet.image}
-          title="NASA Solar System Visualization" 
-          width="100%" 
-          height="300" 
-          frameBorder="0" 
-          allowFullScreen
-        ></iframe>
+          alt="Planet Image"
+          width={800} // Set the desired width
+          height={600} // Set the desired height
+        />
       </div>
       <p className="planet-desc">{planet.desc}</p>
 
@@ -55,7 +54,13 @@ function PlanetInfo() {
           <ul>
             {planet.points_of_interest.map((poi, index) => (
               <li key={index} className="poi-item">
-                <img src={poi.image} alt={poi.name} className="poi-image" />
+                {/* Replace <img> with <Image> */}
+                <Image
+                  src={poi.image}
+                  alt={poi.name}
+                  width={200} // Set the desired width
+                  height={150} // Set the desired height
+                />
                 <div>
                   <h3>{poi.name}</h3>
                   <p>{poi.desc}</p>

@@ -29,6 +29,10 @@ function CoolNavbar({ onSelectPlanet }) {
     }
   };
 
+  const handleRocketMouseMove = (e) => {
+    // Handle rocket-specific mouse move events here
+  };
+
   // Event handlers for logo and buttons
   const handleLogoMouseEnter = () => {
     setRocketVisible(false);
@@ -55,121 +59,121 @@ function CoolNavbar({ onSelectPlanet }) {
     setRocketVisible(true);
   };
 
-  return (
-    <Navbar
-      expand="lg"
-      variant="dark"
-      style={{
-        height: '80px',
-        position: 'relative',
-        cursor: rocketVisible ? 'none' : 'auto',
-      }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onMouseMove={handleNavbarMouseMove}
-    >
-      <Container fluid>
-        <Navbar.Brand
-          as={Link}
-          to="/"
-          className="logo"
-          onMouseEnter={handleLogoMouseEnter}
-          onMouseLeave={handleLogoMouseLeave}
-        >
-          <Image src='/planets/logo.png' alt="Logo" style={{ height: '130px', width: '130px' }} />
-        </Navbar.Brand>
-
-        {/* Right-aligned links */}
-        <Nav className="ms-auto" style={{ maxHeight: '100px' }} navbarScroll>
-          <Nav.Link
+    return (
+      <Navbar
+        expand="lg"
+        variant="dark"
+        style={{
+          height: '80px',
+          position: 'relative',
+          cursor: rocketVisible ? 'none' : 'auto',
+        }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onMouseMove={handleNavbarMouseMove}
+      >
+        <Container fluid>
+          <Navbar.Brand
             as={Link}
             to="/"
-            className="white-text"
-            onMouseEnter={handleButtonMouseEnter}
-            onMouseLeave={handleButtonMouseLeave}
+            className="logo"
+            onMouseEnter={handleLogoMouseEnter}
+            onMouseLeave={handleLogoMouseLeave}
           >
-            Home
-          </Nav.Link>
-          <Nav.Link
-            as={Link}
-            to="/booking"
-            className="white-text"
-            onMouseEnter={handleButtonMouseEnter}
-            onMouseLeave={handleButtonMouseLeave}
-          >
-            Book
-          </Nav.Link>
-          <NavDropdown
-            title="Planets"
-            id="navbarScrollingDropdown"
-            className='white-text'
-            onMouseEnter={handleDropdownMouseEnter}
-            onMouseLeave={handleDropdownMouseLeave}
-          >
-            {Object.keys(planetsData).map((planetKey) => (
-              <NavDropdown.Item key={planetKey} as={Link} to={`/planet-info/${planetKey}`}>
-                {planetsData[planetKey].title}
-              </NavDropdown.Item>
-            ))}
-          </NavDropdown>
-          <Nav.Link
-            as={Link}
-            to="/about"
-            className="white-text"
-            onMouseEnter={handleButtonMouseEnter}
-            onMouseLeave={handleButtonMouseLeave}
-          >
-            About
-          </Nav.Link>
-
-          {/* Centered "Team" link */}
-          <button
-            className="btn1"
-            type="button1"
-            style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}
-            onMouseEnter={handleButtonMouseEnter}
-            onMouseLeave={handleButtonMouseLeave}
-          >
-            <strong>EXPLORE'N'CO</strong>
-            <div id="container-stars">
-              <div id="stars"></div>
-            </div>
-
-            <div id="glow">
-              <div className="circle"></div>
-              <div className="circle"></div>
-            </div>
-          </button>
-
-          <Nav.Link
-            as={Link}
-            to="/login"
-            className="white-text"
-            onMouseEnter={handleButtonMouseEnter}
-            onMouseLeave={handleButtonMouseLeave}
-          >
-            Login
-          </Nav.Link>
-        </Nav>
-      </Container>
-
-      {rocketVisible && (
-        <Image
-          src="https://cdn.pixabay.com/animation/2022/07/31/06/27/06-27-17-124_512.gif"
-          alt="Rocket"
-          style={{
-            position: 'absolute',
-            width: '30px',
-            height: 'auto',
-            left: `${rocketPosition.x}px`,
-            top: `${rocketPosition.y}px`,
-            zIndex: -1,
-          }}
-          onMouseMove={handleRocketMouseMove}
-        />
-      )}
-    </Navbar>
-  );
-}
-
-export default CoolNavbar;
+            <Image src='\planets\logo.png' alt="Logo" style={{ height: '130px', width: '130px' }} />
+          </Navbar.Brand>
+  
+          {/* Right-aligned links */}
+          <Nav className="ms-auto" style={{ maxHeight: '100px' }} navbarScroll>
+            <Nav.Link
+              as={Link}
+              to="/"
+              className="white-text"
+              onMouseEnter={handleButtonMouseEnter}
+              onMouseLeave={handleButtonMouseLeave}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/booking"
+              className="white-text"
+              onMouseEnter={handleButtonMouseEnter}
+              onMouseLeave={handleButtonMouseLeave}
+            >
+              Book
+            </Nav.Link>
+            <NavDropdown
+              title="Planets"
+              id="navbarScrollingDropdown"
+              className='white-text'
+              onMouseEnter={handleDropdownMouseEnter}
+              onMouseLeave={handleDropdownMouseLeave}
+            >
+              {Object.keys(planetsData).map((planetKey) => (
+                <NavDropdown.Item key={planetKey} as={Link} to={`/planet-info/${planetKey}`}>
+                  {planetsData[planetKey].title}
+                </NavDropdown.Item>
+              ))}
+            </NavDropdown>
+            <Nav.Link
+              as={Link}
+              to="/about"
+              className="white-text"
+              onMouseEnter={handleButtonMouseEnter}
+              onMouseLeave={handleButtonMouseLeave}
+            >
+              About
+            </Nav.Link>
+  
+            {/* Centered "Team" link */}
+            <button
+              className="btn1"
+              type="button1"
+              style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}
+              onMouseEnter={handleButtonMouseEnter}
+              onMouseLeave={handleButtonMouseLeave}
+            >
+              <strong>EXPLORE&apos;N&apos;CO</strong> {/* Escaped single quotes */}
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+  
+              <div id="glow">
+                <div className="circle"></div>
+                <div className="circle"></div>
+              </div>
+            </button>
+  
+            <Nav.Link
+              as={Link}
+              to="/login"
+              className="white-text"
+              onMouseEnter={handleButtonMouseEnter}
+              onMouseLeave={handleButtonMouseLeave}
+            >
+              Login
+            </Nav.Link>
+          </Nav>
+        </Container>
+  
+        {rocketVisible && (
+          <Image
+            src="https://cdn.pixabay.com/animation/2022/07/31/06/27/06-27-17-124_512.gif"
+            alt="Rocket"
+            style={{
+              position: 'absolute',
+              width: '30px',
+              height: 'auto',
+              left: `${rocketPosition.x}px`,
+              top: `${rocketPosition.y}px`,
+              zIndex: -1,
+            }}
+            onMouseMove={handleRocketMouseMove}
+          />
+        )}
+      </Navbar>
+    );
+  }
+  
+  export default CoolNavbar;

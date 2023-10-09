@@ -40,7 +40,7 @@ function LoginComponent() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <div id="emailHelp" className="form-text text-white">We'll never share your email with anyone else.</div>
+              <div id="emailHelp" className="form-text text-white">We&apos;ll never share your email with anyone else.</div> {/* Corrected line */}
             </div>
             <div className="mb-4">
               <label htmlFor="exampleInputPassword1" className="form-label text-white">Password</label>
@@ -67,7 +67,7 @@ function LoginComponent() {
               <button type="button" className="btn btn-primary btn-block" onClick={handleLogin}>Login</button>
             </div>
           </form>
-          <p className="mt-3 text-center">Don't have an account? <Link to="/register">Register</Link></p>
+          <p className="mt-3 text-center">Don&apos;t have an account? <Link to="/register">Register</Link></p> {/* Corrected line */}
         </div>
       </div>
     </div>

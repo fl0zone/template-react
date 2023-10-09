@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image'; // Import the Image component from next/image
 import './About.css';
 
 function About() {
@@ -20,9 +21,16 @@ function About() {
 
       <h2>Team Members</h2>
       <div className="team-members">
-        {teamData.members.map((member, index) => ( // Add a unique "key" prop to each mapped element
+        {teamData.members.map((member, index) => (
           <div className="card" key={index}>
-            <img className="img" src={member.image} alt={member.name} /> {/* Add "alt" prop for accessibility */}
+            {/* Replace <img> with <Image> */}
+            <Image
+              className="img"
+              src={member.image}
+              alt={member.name}
+              width={300} // Set the desired width
+              height={200} // Set the desired height
+            />
             <div className="textBox">
               <p className="text head">{member.name}</p>
               <div className='black-text'>
